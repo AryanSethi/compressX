@@ -9,17 +9,17 @@ def cvrt_write(img_name,img_path,des_path):
 
 
 failed_conversions = []
-all_imgs = os.listdir('ds/RGB')
+all_imgs = os.listdir('D:\work\CompressX\ds\RGB')
 
 for img in all_imgs:
-    img_path = os.path.join('ds/RGB/',img)
+    img_path = os.path.join('D:\work\CompressX\ds\RGB',img)
     try:
-        cvrt_write(img,img_path,'ds/HSV/')
+        cvrt_write(img,img_path,'D:\work\CompressX\ds\HSV')
     except:
         failed_conversions.append(img)
 
 print('FAILED CONVERSIONS : ',failed_conversions)
-print(len(os.listdir('ds/HSV/')))
+print(len(os.listdir("D:\work\CompressX\ds\HSV/")))
 
 
 

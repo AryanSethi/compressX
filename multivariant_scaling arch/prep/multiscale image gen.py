@@ -16,7 +16,6 @@ def multiScale(img_name,img_path,des_path):
     cv2.imwrite(des3, downscale2)
 
 
-
 failed_conversions = []
 all_imgs = os.listdir('D:\work\CompressX\ds\RGB')
 
